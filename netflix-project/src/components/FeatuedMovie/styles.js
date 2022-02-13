@@ -58,6 +58,11 @@ export const FeaturedInfo = styled.div`
     }
   }
 
+  @media (min-height: 850px) {
+    .featured-overview {
+      height: 100px;
+    }
+  }
   a {
     background-color: #f3f3f3;
     max-width: fit-content;

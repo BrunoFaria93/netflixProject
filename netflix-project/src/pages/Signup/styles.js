@@ -19,6 +19,9 @@ export const MainSignup = styled.main`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    h1{
+      margin-left: 25px;
+    }
   }
   .text-login {
     display: none;
@@ -113,7 +116,7 @@ export const Footer = styled.footer`
   background-color: rgba(0, 0, 0, 0.87);
   color: #8c8c8c;
   width: 100vw;
-  height: 12vh;
+  height: 13vh;
   margin: 0px;
   font-size: 10px;
   position: absolute;

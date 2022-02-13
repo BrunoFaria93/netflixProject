@@ -86,7 +86,11 @@ const Signup = () => {
                 className="title"
                 component="h1"
                 variant="h4"
-                sx={{ color: "white", fontWeight: "600", width: "100%" }}
+                sx={{
+                  color: "white",
+                  fontWeight: "600",
+                  width: "100%",
+                }}
               >
                 Cadastro
               </Typography>
@@ -110,6 +114,7 @@ const Signup = () => {
                 color="warning"
                 fullWidth
                 label="Nome"
+                inputProps={{ style: { color: "#f3f3f3" } }}
                 sx={{
                   mt: 2,
                   background: "#333",
@@ -127,6 +132,7 @@ const Signup = () => {
                 {...register("email")}
                 id="filled-basic"
                 variant="filled"
+                inputProps={{ style: { color: "#f3f3f3" } }}
                 InputLabelProps={{
                   style: { color: "#8c8c8c" },
                 }}
@@ -159,6 +165,7 @@ const Signup = () => {
                 variant="filled"
                 color="warning"
                 fullWidth
+                inputProps={{ style: { color: "#f3f3f3" } }}
                 InputLabelProps={{
                   style: { color: "#8c8c8c" },
                 }}
@@ -181,6 +188,7 @@ const Signup = () => {
                 variant="filled"
                 color="warning"
                 fullWidth
+                inputProps={{ style: { color: "#f3f3f3" } }}
                 InputLabelProps={{
                   style: { color: "#8c8c8c" },
                 }}

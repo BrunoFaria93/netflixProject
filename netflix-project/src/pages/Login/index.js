@@ -15,7 +15,6 @@ import logo from "../../assets/images/netflix-logo.png";
 import { motion } from "framer-motion";
 import { MainLogin } from "./styles";
 
-
 const Login = () => {
   const { login } = useUser();
   const schema = yup.object().shape({
@@ -100,20 +99,19 @@ const Login = () => {
                 variant="filled"
                 fullWidth
                 color="warning"
+                label="E-mail"
                 InputLabelProps={{
                   style: { color: "#8c8c8c" },
                 }}
-                label="E-mail"
+                inputProps={{ style: { color: "#f3f3f3" } }}
                 sx={{
                   mt: 2,
                   background: "#333",
-                  color: "#999999",
                   borderRadius: "5px",
                 }}
                 helperText={errors.email?.message}
                 error={!!errors.email?.message}
               />
-
               <TextField
                 className="input-password"
                 {...register("password")}
@@ -122,10 +120,13 @@ const Login = () => {
                 fullWidth
                 id="filled-basic"
                 color="warning"
-                InputLabelProps={{
-                  style: { color: "#8c8c8c" },
-                }}
                 label="Senha"
+                InputLabelProps={{
+                  style: {
+                    color: "#8c8c8c",
+                  },
+                }}
+                inputProps={{ style: { color: "#f3f3f3" } }}
                 sx={{
                   mt: 2,
                   background: "#333",
@@ -135,7 +136,6 @@ const Login = () => {
                 helperText={errors.password?.message}
                 error={!!errors.password?.message}
               />
-
               <Button
                 className="button-enter"
                 type="submit"

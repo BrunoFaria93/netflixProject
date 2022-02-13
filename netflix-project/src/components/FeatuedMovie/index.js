@@ -3,7 +3,7 @@ import { FeaturedInfo, FeaturedMovieContainer, GoesBlack } from "./styles";
 import Header from "../Header/index";
 
 const FeaturedMovie = ({ item, blackHeader }) => {
-  console.log(item.genres)
+  console.log(item.genres);
   let firstDate = new Date(item.first_air_date);
   let genres = [];
   for (let i in item.genres) {
@@ -44,9 +44,16 @@ const FeaturedMovie = ({ item, blackHeader }) => {
               <p>{item.overview}</p>
             </div>
             <div className="featured-buttons">
-              <a href={`/watch/${item.id}`}> ► Assistir</a>
-              <a
+              {/* <a href={`/watch/${item.id}`}> ► Assistir</a> */}
+              <a href={"/"}> ► Assistir</a>
+              {/* <a
                 href={`/watch/${item.id}`}
+                style={{ backgroundColor: "#333", color: "#f3f3f3" }}
+              >
+                + Minha Lista
+              </a> */}
+              <a
+                href={"/"}
                 style={{ backgroundColor: "#333", color: "#f3f3f3" }}
               >
                 + Minha Lista

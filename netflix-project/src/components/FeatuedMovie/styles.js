@@ -31,6 +31,7 @@ export const GoesBlack = styled.div`
 export const FeaturedInfo = styled.div`
   margin-left: 0px;
   margin-top: 150px;
+  margin-left: 10px;
   h1 {
     font-size: 2rem;
   }

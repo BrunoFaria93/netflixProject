@@ -66,7 +66,7 @@ const MovieRow = ({ title, items }) => {
             {items.results.length > 0 &&
               items.results.map((item) => (
                 <img
-                  src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
+                  src={`https://image.tmdb.org/t/p/w200${item.poster_path}`}
                   alt={item.original_title}
                   key={Math.random()}
                 />

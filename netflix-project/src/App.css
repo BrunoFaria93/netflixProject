@@ -22,6 +22,11 @@ body {
     margin-top: -150px;
   }
 }
+@media (min-height: 850px) {
+  .lists {
+    margin-top: -250px;
+  }
+}
 .black-header {
   background-color: #141414 !important;
 }

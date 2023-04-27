@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const MainSignup = styled.main`
   background-color: rgba(0, 0, 0, 0.75);
-
+  overflow: hidden;
   .logo {
     display: none;
   }
   .motion-div {
     width: 90vw;
+    margin-top: 20px;
   }
   .container-box {
     max-width: 90vw;
@@ -15,7 +16,8 @@ export const MainSignup = styled.main`
     padding-top: 20px;
   }
   .container {
-    height: 87vh;
+    height: 100%;
+    overflow: hidden;
     width: 100vw;
     display: flex;
     justify-content: start;
@@ -118,7 +120,7 @@ export const Footer = styled.footer`
   background-color: rgba(0, 0, 0, 0.87);
   color: #8c8c8c;
   width: 100vw;
-  height: 13vh;
+  height: auto;
   margin: 0px;
   font-size: 10px;
   position: absolute;

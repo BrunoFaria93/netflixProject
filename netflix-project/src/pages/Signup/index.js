@@ -53,7 +53,7 @@ const Signup = () => {
   };
 
   return (
-    <MainSignup className="main-login">
+    <MainSignup className="main-signup">
       <div className="container">
         <div className="logo">
           <img src={logo} style={{ width: "200px" }} alt="logo" />
@@ -229,7 +229,19 @@ const Signup = () => {
           </Container>
         </motion.div>
       </div>
-      <Footer>
+      <footer
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "rgba(0, 0, 0, 0.87)",
+          color: "#8c8c8c",
+          width: "100vw",
+          height: "20vh",
+          margin: "0px",
+        }}
+      >
         Feito com &nbsp;
         <span role="img" aria-label="coração" style={{ color: "red" }}>
           ❤️ &nbsp;
@@ -239,7 +251,18 @@ const Signup = () => {
         Direitos de imagem para Netflix
         <br />
         Dados pegos do site Themoviedb.org
-      </Footer>
+      </footer>
+      {/* <Footer>
+        Feito com &nbsp;
+        <span role="img" aria-label="coração" style={{ color: "red" }}>
+          ❤️ &nbsp;
+        </span>
+        por Bruno Faria
+        <br />
+        Direitos de imagem para Netflix
+        <br />
+        Dados pegos do site Themoviedb.org
+      </Footer> */}
     </MainSignup>
   );
 };

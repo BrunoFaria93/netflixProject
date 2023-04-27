@@ -7,6 +7,7 @@ export const MainLogin = styled.main`
   }
   .motion-div {
     width: 90vw;
+    margin-top: 20px;
   }
   .container-box {
     max-width: 90vw;

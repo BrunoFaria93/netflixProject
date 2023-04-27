@@ -50,3 +50,16 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+.main-signup {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+
+  background-image: url("./assets/images/login-wall.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

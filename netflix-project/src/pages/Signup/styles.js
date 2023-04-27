@@ -8,7 +8,6 @@ export const MainSignup = styled.main`
   }
   .motion-div {
     width: 90vw;
-    margin-top: 20px;
   }
   .container-box {
     max-width: 90vw;
@@ -16,14 +15,14 @@ export const MainSignup = styled.main`
     padding-top: 20px;
   }
   .container {
-    height: 100%;
     overflow: hidden;
+    height: 80vh;
     width: 100vw;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    h1{
+    h1 {
       margin-left: 25px;
     }
   }
@@ -112,32 +111,32 @@ export const MainSignup = styled.main`
     }
   }
 `;
-export const Footer = styled.footer`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.87);
-  color: #8c8c8c;
-  width: 100vw;
-  height: auto;
-  margin: 0px;
-  font-size: 10px;
-  position: absolute;
-  bottom: 0vh;
+// export const Footer = styled.footer`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: rgba(0, 0, 0, 0.87);
+//   color: #8c8c8c;
+//   width: 100vw;
+//   margin: 0px;
+//   font-size: 10px;
+//   position: absolute;
+//   bottom: 0vh;
+//   padding: 10px;
 
-  @media (min-width: 1100px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.87);
-    color: #8c8c8c;
-    width: 100vw;
-    height: 20vh;
-    margin: 0px;
-    position: relative;
-    bottom: 0;
-    font-size: 16px;
-  }
-`;
+//   @media (min-width: 1100px) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: rgba(0, 0, 0, 0.87);
+//     color: #8c8c8c;
+//     width: 100vw;
+//     height: 20vh;
+//     margin: 0px;
+//     position: relative;
+//     bottom: 0;
+//     font-size: 16px;
+//   }
+// `;

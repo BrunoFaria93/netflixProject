@@ -61,6 +61,7 @@ export const FeaturedInfo = styled.div`
   @media (min-height: 850px) {
     .featured-overview {
       height: 100px;
+ 
     }
   }
   a {
@@ -119,6 +120,10 @@ export const FeaturedInfo = styled.div`
     }
     p {
       font-weight: 300;
+      white-space: wrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
     .featured-overview {
       height: auto;
@@ -126,6 +131,10 @@ export const FeaturedInfo = styled.div`
       color: #999;
       font-size: 1.3rem;
       margin-bottom: 10px;
+      white-space: wrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
 
       p {
         overflow: hidden;

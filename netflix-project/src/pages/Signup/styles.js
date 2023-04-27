@@ -11,12 +11,13 @@ export const MainSignup = styled.main`
   }
   .container-box {
     max-width: 90vw;
+    margin-top: 20px;
   }
   .container {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     h1{
@@ -120,7 +121,7 @@ export const Footer = styled.footer`
   margin: 0px;
   font-size: 10px;
   position: absolute;
-  bottom: -12vh;
+  bottom: 0vh;
 
   @media (min-width: 1100px) {
     display: flex;

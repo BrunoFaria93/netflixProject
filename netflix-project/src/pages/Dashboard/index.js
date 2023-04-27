@@ -9,6 +9,7 @@ import notFound from "../../assets/images/notfound.svg";
 import BasicModal from "./BasicModal";
 const Dashboard = () => {
   const [movieList, setMovieList] = useState([]);
+  const [isMobile, setIsMobile] = useState(true)
   const [featuredData, setFeaturedData] = useState(null);
   const [blackHeader, setBlackHeader] = useState(false);
   const { token } = useUser();
@@ -28,6 +29,11 @@ const Dashboard = () => {
     ],
   };
 
+  useEffect(() => {
+    if(window.innerWidth > 640){
+      setIsMobile(false)
+    }
+  }, [])
   useEffect(() => {
     const loadAll = async () => {
       // Pegando a lista total
@@ -65,6 +71,7 @@ const Dashboard = () => {
     };
   }, []);
 
+  console.log("isMobile ", isMobile)
   return (
     <motion.div
       className="form-container"
@@ -78,7 +85,7 @@ const Dashboard = () => {
           <>
             <FeaturedMovie item={featuredData} blackHeader={blackHeader} />
 
-            <section className="lists">
+            <section style={{marginTop: isMobile ? "-120px" : "-20px"}} className="lists">
               {movieList.map((item) => (
                 <MovieRow
                   key={Math.random()}
@@ -111,7 +118,7 @@ const Dashboard = () => {
             >
               <FeaturedMovie item={object404} blackHeader={blackHeader} />
 
-              <section className="lists">
+              <section style={{marginTop: isMobile ? "-120px" : "-20px"}} className="lists">
                 {movieList.map((item) => (
                   <MovieRow
                     key={Math.random()}

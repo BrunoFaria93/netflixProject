@@ -11,10 +11,11 @@ export const MainSignup = styled.main`
   }
   .container-box {
     max-width: 90vw;
-    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .container {
-    height: 100vh;
+    height: 87vh;
     width: 100vw;
     display: flex;
     justify-content: start;

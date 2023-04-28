@@ -4,7 +4,6 @@ import BasicModal from "../../pages/Dashboard/BasicModal";
 import { BlackHeader } from "./styles";
 
 const Header = ({ blackHeader }) => {
-  console.log(blackHeader);
   return (
     <BlackHeader className={blackHeader ? "black-header" : ""}>
       <a href="/">

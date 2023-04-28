@@ -71,7 +71,6 @@ const Dashboard = () => {
     };
   }, []);
 
-  console.log("isMobile ", isMobile)
   return (
     <motion.div
       className="form-container"

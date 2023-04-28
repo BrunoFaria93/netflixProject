@@ -3,7 +3,6 @@ import { FeaturedInfo, FeaturedMovieContainer, GoesBlack } from "./styles";
 import Header from "../Header/index";
 
 const FeaturedMovie = ({ item, blackHeader }) => {
-  console.log(item.genres);
   let firstDate = new Date(item.first_air_date);
   let genres = [];
   for (let i in item.genres) {
